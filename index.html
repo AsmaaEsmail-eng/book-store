@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStore</title>
+</head>
+<style>
+   
+
+    .logo {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/im.webp') ;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+        height: 70px;
+       
+
+    }
+    .logo h1 {
+        font-size: 2.5rem;
+        margin: 0;
+        color: white;
+        text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    .nav {
+        background-color: #333;
+        color: #fff;
+        padding:12px 0;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+       
+    }
+
+    .nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+         gap: 50px;
+    }
+    .content h2 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .content p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-bottom: 50px;
+    }
+
+    .nav ul li {
+        margin: 0 15px;
+    }
+
+    .nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .nav ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .book-categories {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+        
+    }
+
+    .category {
+        border: 1px solid #e0e0e0;
+        width: 300px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        text-align: center;
+       
+    }
+
+    .category img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+         transition:  0.3s ;
+    }
+    .category img:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    }
+</style>
+<body>
+    <div class="logo">
+        <h1 style="text-align: center;">the BookStore</h1>
+    </div>
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Bestsellers</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+        </ul>
+
+    </div>
+    <div class="content">
+        <h2>Welcome to BookStore</h2>
+        <p>Discover a wide range of books from various genres and authors. Whether you're looking for the latest bestsellers or timeless classics, we have something for every reader.</p>
+        <div class="book-categories">
+            <div class="category">
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaFMu0HAmEyByOQIjMLEiA085XKL4dvYn9LxY9PCzzkkiC3pHzxnYjJVt6&s=10" alt="Fantasy Book">
+                    <figcaption>
+                        <h2>The World of Fantasy</h2>
+                        <p>Discover magical stories, unforgettable heroes, and amazing adventures.</p></figcaption>
+                </figure>
+            </div> 
+            <div class="category">
+                <figure>
+                    <img src="https://cdn.salla.sa/yGRdN/NpsJ2C8VfzHIKPVICqtOQX9dicLJcOv4FhnUc5x2.jpg" alt="Mystery Book">
+                    <figcaption>
+                        <h2>Unravel the Mystery</h2>
+                        <p>Follow the clues, solve the puzzles and uncover hidden secrets.</p></figcaption>
+                </figure>
+            </div>
+            <div class="category">
+                <figure>
+                    <img src="https://png.pngtree.com/png-vector/20260101/ourmid/pngtree-romantic-novels-and-rose-png-image_18384638.webp" alt="Romance Book">
+                    <figcaption>
+                        <h2>Where Every Love Story Begins</h2>
+                        <p>Find Stories Full of Love, hope and unforgettable moments.</p></figcaption>
+                </figure>
+            </div>
+            <div class="category">
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPq_zwbJ70QFDfbwkEYlDb1bFjvPgyiMsLGV4dV60Ijw&s=10" alt="Science Fiction Book">
+                <figcaption>
+                    <h2>Future Technology</h2>
+                    <p>Explore the possibilities of what lies ahead in the world of science fiction.</p>
+                </figcaption>
+            </figure>
+            </div>
+        </div>
+       
+</body>
+</html>
